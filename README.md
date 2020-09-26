@@ -6,6 +6,7 @@
 - [401 Reading 2 - Test Driven Development](4read2.md)
 - [401 Reading 3 - ](4read3.md)
 - [401 Reading 4 - Linked Lists and Big O](4read4.md)
+- [401 Reading 16 - Access Controls](4read16.md)
 
 ## Coding 301
 ### Reading Notes
