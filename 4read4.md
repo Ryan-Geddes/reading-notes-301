@@ -1,44 +1,70 @@
+## Why would a developer choose to make data models?
+Models allow devs to easily normalize data!
+Data models allow devs to clearly define the scope of the the project, as well as clarifying the purpose of the application.  Data models also allow clearer documentation and can help prevent data errors.
 
-## Arrays vs Linked Lists
+## What purpose do CRUD operations serve?
+CRUD operations are the 4 basic data manipulations of a relational database.  It stands for Create Read Update Delete.
 
-[What is a linked list? pt1](https://medium.com/basecs/whats-a-linked-list-anyway-part-1-d8b7e6508b9d)
-[What is a linked list? pt2](https://medium.com/basecs/whats-a-linked-list-anyway-part-2-131d96f71996)
+## What kind of database is Postgres? What kind of database is MongoDB?
+Postgres is a relational database, MongoDB is a document-oriented or NoSQL database, that uses optional schemas and is not relational.  
 
+## What is Mongoose and why do we need it?
+[Mongo Basics](https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/#:~:text=Mongoose%20is%20an%20Object%20Data,of%20those%20objects%20in%20MongoDB)
+Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
 
-The fundamental difference between arrays and linked lists is that arrays are static data structures, while linked lists are dynamic data structures. A static data structure needs all of its resources to be allocated when the structure is created; this means that even if the structure was to grow or shrink in size and elements were to be added or removed, it still always needs a given size and amount of memory. If more elements needed to be added to a static data structure and it didn’t have enough memory, you’d need to copy the data of that array, for example, and recreate it with more memory, so that you could add elements to it.
-
-The starting point of the list is a reference to the first node, which is referred to as the head. Nearly all linked lists must have a head, because this is effectively the only entry point to the list and all of its elements, and without it, you wouldn’t know where to start! The end of the list isn’t a node, but rather a node that points to null, or an empty value.
-
-A single node is also pretty simple. It has just two parts: data, or the information that the node contains, and a reference to the next node.
-
-A node only knows about what data it contains, and who its neighbor is.
-
-There are three main types of linked lists:
-
-## Singly Linked Lists
-
-Singly linked lists are the simplest type of linked list, based solely on the fact that they only go in one direction. There is a single track that we can traverse the list in; we start at the head node, and traverse from the root until the last node, which will end at an empty null value.
-
-## Doubly Linked Lists
-just as a node can reference its subsequent neighbor node, it can also have a reference pointer to its preceding node, too! This is what we call a doubly linked list, because there are two references contained within each node: a reference to the next node, as well as the previous node. This can be helpful if we wanted to be able to traverse our data structure not just in a single track or direction, but also backwards, too.
-
-## Circular Linked Lists
-
-A circular linked list is a little odd in that it doesn’t end with a node pointing to a null value. Instead, it has a node that acts as the tail of the list (rather than the conventional head node), and the node after the tail node is the beginning of the list. This organization structure makes it really easy to add something to the end of the list, because you can begin traversing it at the tail node, as the first element and last element point to one another. Circular linked lists can start to get really crazy because we can turn both a singly linked list and a doubly linked list into a circular linked list!
+Using Mongoose, a user can define the schema for the documents in a particular collection. It provides a lot of convenience in the creation and management of data in MongoDB. On the downside, learning mongoose can take some time, and has some limitations in handling schemas that are quite complex.
 
 
-# Big O
+## Describe how NoSQL Databases scale horizontally
+NoSQL DBs can scale on many small distributed machines since it is able to scale horizontally, whereas a relational database must be stored on a single server on a single machine.
 
-O stands for Order.
+## Give one strong argument for and against NoSQL Databases
+noSQL databases are much easier to scale than SQL dbs, but these benefits come at the cost of relaxing ACID principles: instead of keeping all four parameters consistent throughout every transaction, NoSQL uses the principle of eventual consistency. This means that if there are no new updates for a particular data item for a certain period of time, eventually all accesses to it will return the last updated value. That’s why such systems are usually described as providing BASE guarantees (Basically Available, Soft state, Eventual consistency) — as opposed to ACID.
 
-There are two major points to consider when thinking about how an algorithm performs: how much time it requires at runtime given how much time and memory it needs.
+While this approach greatly increases access time and scalability, it may lead to data loss – the severity of the problem depends on database server support and the quality of application code. In some cases, this issue might be very serious.
 
-Big O Notation is a way of evaluating the performance of an algorithm.
+(https://bitnine.net/blog-computing/sql-vs-nosql-comparative-advantages-and-disadvantages/)
 
-An O(1) function takes constant time, which is to say that it doesn’t matter how many elements we have, or how huge our input is: it’ll always take the same amount of time and memory to run our algorithm. An O(n) function is linear, which means that as our input grows (from ten numbers, to ten thousand, to ten million), the space and time that we need to run that algorithm grows linearly.
 
-An O(n²) function, which clearly takes exponentially more time and memory the more elements that you have. It’s pretty safe to say that we want to avoid O(n²) algorithms, just from looking at that crazy red line!
+## Name 3 cloud based NoSQL Databases
+Apache Cassandra, MongoDB,
 
-Inserting an element at the beginning of a linked list is particularly nice and efficient because it takes the same amount of time, no matter how long our list is, which is to say it has a space time complexity that is constant, or O(1).
+# Terminologies
 
-### A linked list is usually efficient when it comes to adding and removing most elements, but can be very slow to search and find a single element.
+## Collections
+‘Collections’ in Mongo are equivalent to tables in relational databases. They can hold multiple JSON documents.
+
+## Documents
+‘Documents’ are equivalent to records or rows of data in SQL. While a SQL row can reference data in other tables, Mongo documents usually combine that in a document.
+
+## Fields
+‘Fields’ or attributes are similar to columns in a SQL table.
+
+## Schema
+While Mongo is schema-less, SQL defines a schema via the table definition. A Mongoose ‘schema’ is a document data structure (or shape of the document) that is enforced via the application layer.
+
+## Models
+‘Models’ are higher-order constructors that take a schema and create an instance of a document equivalent to records in a relational database.
+
+- database - any organized collection of data
+- data model - A data model is an abstract model that organizes elements of data and standardizes how they relate to one another and to the properties of real-world entities. For instance, a data model may specify that the data element representing a car be composed of a number of other elements which, in turn, represent the color and size of the car and define its owner.
+- CRUD - Create Read Update Delete
+- schema - schemas define the 'shape' of the data in a database.  In a relational database the schema is enforced by default, whereas in a nonrelational database schemas must be artificially enforced.
+- sanitize - refers to normalization of data before inputting into a database
+- Structured Query Language (SQL) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables.
+- Non SQL (NoSQL) - A NoSQL (originally referring to "non-SQL" or "non-relational")[1] database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases. 
+- MongoDB - MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
+- Mongoose - Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
+- record
+- document
+- Object Relation Mapping (ORM) - Object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between incompatible type systems using object-oriented programming languages. This creates, in effect, a "virtual object database" that can be used from within the programming language.
+
+[what is a rest api?](https://www.youtube.com/watch?v=Q-BpqyOT3a8)
+[http basics](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
+[what is REST?](https://restfulapi.net/)
+
+How to insert cursor at beginning of every line:
+
+Press CTRL + A to select all of the text.
+Press SHIFT + ALT + I to insert multiple cursors at the end of each line.
+Press Home twice to jump to the start of every line.
