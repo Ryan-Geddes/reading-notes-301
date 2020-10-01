@@ -63,6 +63,13 @@ While Mongo is schema-less, SQL defines a schema via the table definition. A Mon
 [http basics](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
 [what is REST?](https://restfulapi.net/)
 
+Other articles:
+
+(https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/#:~:text=Mongoose%20is%20an%20Object%20Data,of%20those%20objects%20in%20MongoDB)
+(https://hackernoon.com/database-scaling-horizontal-and-vertical-scaling-85edd2fd9944)
+(https://www.tekedia.com/nosql-database-advantages-and-disadvantages/)
+(https://bitnine.net/blog-computing/sql-vs-nosql-comparative-advantages-and-disadvantages/)
+
 How to insert cursor at beginning of every line:
 
 Press CTRL + A to select all of the text.
