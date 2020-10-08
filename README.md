@@ -7,6 +7,8 @@
 - [401 Reading 3 - ](4read3.md)
 - [401 Reading 4 - Data Models](4read4.md)
 - [401 Reading 5 - Linked Lists and Big O](4read5.md)
+- [401 Reading 6 - HTTP and REST](4read6.md)
+- [401 Reading 7 - Soap Vs REST](4read7.md)
 - [401 Reading 16 - Access Controls](4read16.md)
 
 ## Coding 301

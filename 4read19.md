@@ -55,7 +55,9 @@ There can only be one listener socket for a given address/port combination.
 - **Packets** - A packet is a small amount of data sent over a network, such as a LAN or the Internet. Similar to a real-life package, each packet includes a source and destination as well as the content (or data) being transferred. When the packets reach their destination, they are reassembled into a single file or other contiguous block of data.
 - **Socket** - A TCP socket is an endpoint instance defined by an IP address and a port in the context of either a particular TCP connection or the listening state.
 
+Ben Hill's notes on this subject are phenomenal:
 
+https://benhill-401-advanced-javascript.github.io/reading-notes/401-js/class-19.html
 
 How to insert cursor at beginning of every line:
 
