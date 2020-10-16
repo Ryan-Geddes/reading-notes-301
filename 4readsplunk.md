@@ -63,6 +63,14 @@ Deployment server manages all the components of Splunk like indexer, forwarder, 
 ## Briefly explain the indexing process.  Does Splunk use a relational or a non relational db for indexes?
 [Splunk docs: how indexing works](https://docs.splunk.com/Documentation/Splunk/6.5.2/Indexer/Howindexingworks)
 
+Splunk uses a proprietary data store called an index which consists of raw files. It is nothing like a conventional DB. Here is a good explanation of what an index is and how Splunk stores data:
+http://docs.splunk.com/Documentation/Splunk/6.6.0/Indexer/Howindexingworks
+
+Here is a good explanation of how data is stored in the index:
+http://docs.splunk.com/Documentation/Splunk/6.6.0/Indexer/HowSplunkstoresindexes
+
+MongoDB is used by Splunk to facilitate certain internal functionality like the kvstore but is by no means where data is stored as it is ingested from Universal Forwarders etc. Data that is ingested from external sources all goes to an index as specified in your configuration.
+
 ![indexing](./images/indexing.png)
 
 ## What are Splunk buckets? Explain the bucket lifecycle?
