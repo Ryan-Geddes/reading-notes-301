@@ -126,6 +126,8 @@ It is during this step that events are broken into segments that can then be sea
 
 These events are then stored in an Index (which is like a repo) and placed into a bucket (which is like a subdirectory within that repo).
 
+Events keep getting placed into a 'hot' bucket until it reaches a user defined size.  This prevents your buckets from becoming huge, monsterously large files.  Once the bucket is full of events, it's marked as 'warm' and splunk starts filling a new bucket.  After a set time, a bucket is marked as 'cold'. 'Hot' and 'warm' buckets can be written to, 'cold' buckets can only be read.
+
 The events in these buckets are stored as two files: rawdata and index files.  The **rawdata** file contains the actual event data as well as journal information that the indexer can use to reconstitute the index’s index files.  The **index file** contains all the metadata that the indexer uses to search the events stored in the rawdata files.  A bucket without index files is not searchable.  
 ![data pipeline](./images/datapipeline.png)
 
