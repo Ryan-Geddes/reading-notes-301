@@ -14,6 +14,7 @@
 - [401 Reading 18 - Socket.io](4read19.md)
 - [401 Reading 19 - WebSockets](4read20.md)
 - [401 Reading 21 - React Intro](4read21.md)
+- [401 Reading 30 - Hash Tables](4read30.md)
 
 
 ## Coding 301
