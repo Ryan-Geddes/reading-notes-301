@@ -15,6 +15,7 @@
 - [401 Reading 19 - WebSockets](4read20.md)
 - [401 Reading 21 - React Intro](4read21.md)
 - [401 Reading 30 - Hash Tables](4read30.md)
+- [401 Reading 36 - Cookies and Such](4read36.md)
 
 
 
