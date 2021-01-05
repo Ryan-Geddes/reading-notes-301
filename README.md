@@ -17,6 +17,11 @@
 - [401 Reading 30 - Hash Tables](4read30.md)
 
 
+
+
+- [401 Reading 39 - Additional Redux Readings](4read39.md)
+
+
 ## Coding 301
 ### Reading Notes
 Here we go!  These are my notes for Codefellows 301.
