@@ -9,6 +9,7 @@ true! Middleware is any function that is injected into another function and runs
 Middleware will terminate the process if it throws an error or passes an argument into next
 
 ## At what point in the request lifecycle can you “inject” middleware?
+After a request, but before a response.
 
 ## What can cause express to error with “Request headers sent twice, cannot start a second response”
 [understanding express headers sent error](https://www.codementor.io/@oparaprosper79/understanding-node-error-err_http_headers_sent-117mpk82z8)

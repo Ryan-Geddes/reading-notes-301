@@ -9,6 +9,8 @@
 - [401 Reading 5 - Linked Lists and Big O](4read5.md)
 - [401 Reading 6 - HTTP and REST](4read6.md)
 - [401 Reading 7 - Soap Vs REST](4read7.md)
+- [401 Reading 8 - Express middleware](4read8.md)
+- [401 Reading 9 - API Servers](4read9.md)
 - [401 Reading 16 - Access Controls](4read16.md)
 - [401 Reading 17 - Events/Event Loop](4read18.md)
 - [401 Reading 18 - Socket.io](4read19.md)
