@@ -4,7 +4,7 @@
 ### Table of Contents
 - [401 Reading 1 - Node JS](4read1.md)
 - [401 Reading 2 - Test Driven Development](4read2.md)
-- [401 Reading 3 - ](4read3.md)
+- [401 Reading 3 - Data Modeling & No SQL Databases](4read3.md)
 - [401 Reading 4 - Data Models](4read4.md)
 - [401 Reading 5 - Linked Lists and Big O](4read5.md)
 - [401 Reading 6 - HTTP and REST](4read6.md)
