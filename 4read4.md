@@ -46,21 +46,23 @@ While Mongo is schema-less, SQL defines a schema via the table definition. A Mon
 ## Models
 ‘Models’ are higher-order constructors that take a schema and create an instance of a document equivalent to records in a relational database.
 
-- database - any organized collection of data
-- data model - A data model is an abstract model that organizes elements of data and standardizes how they relate to one another and to the properties of real-world entities. For instance, a data model may specify that the data element representing a car be composed of a number of other elements which, in turn, represent the color and size of the car and define its owner.
-- CRUD - Create Read Update Delete
-- schema - schemas define the 'shape' of the data in a database.  In a relational database the schema is enforced by default, whereas in a nonrelational database schemas must be artificially enforced.
-- sanitize - refers to normalization of data before inputting into a database
-- Structured Query Language (SQL) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables.
-- Non SQL (NoSQL) - A NoSQL (originally referring to "non-SQL" or "non-relational")[1] database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases. 
-- MongoDB - MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
-- Mongoose - Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
-- record
-- document
-- Object Relation Mapping (ORM) - Object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between incompatible type systems using object-oriented programming languages. This creates, in effect, a "virtual object database" that can be used from within the programming language.
+- **database** - any organized collection of data
+- **data model** - A data model is an abstract model that organizes elements of data and standardizes how they relate to one another and to the properties of real-world entities. For instance, a data model may specify that the data element representing a car be composed of a number of other elements which, in turn, represent the color and size of the car and define its owner.
+- **CRUD** - Create Read Update Delete
+- **schema** - schemas define the 'shape' of the data in a database.  In a relational database the schema is enforced by default, whereas in a nonrelational database schemas must be artificially enforced.
+- **sanitize **- refers to normalization of data before inputting into a database
+- **Structured Query Language (SQL)** is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables.
+- **Non SQL (NoSQL)** - A NoSQL (originally referring to "non-SQL" or "non-relational")[1] database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases. 
+- **MongoDB** - MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
+- **Mongoose** - Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
+- **record**
+- **document**
+- **Object Relation Mapping (ORM)** - Object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between incompatible type systems using object-oriented programming languages. This creates, in effect, a "virtual object database" that can be used from within the programming language.
 
 [what is a rest api?](https://www.youtube.com/watch?v=Q-BpqyOT3a8)
+
 [http basics](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
+
 [what is REST?](https://restfulapi.net/)
 
 Other articles:

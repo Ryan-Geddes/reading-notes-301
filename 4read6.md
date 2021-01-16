@@ -17,9 +17,10 @@ An advantage of using an ORM is that you can write database requests in your pre
 
 
 ## When making a repository/facade, what flexibility do you gain?
+You can use your language of choice!
 
 ## Name 3 cloud based NoSQL Databases
-
+AWS, MongoDB aTLAS, Microsoft Azure
 
 # Document the following Vocabulary Terms
 
