@@ -22,13 +22,17 @@
 - [401 Reading 26 - React Intro](4read21.md)
 - [401 Reading 27 - Props and State](4read27.md)
 - [401 Reading 28 - Component Composition](4read28.md)
-- [401 Reading 29 - Component Composition](4read29.md)
+- [401 Reading 29 - Routing](4read29.md)
 - [401 Reading 31 - Component Composition](4read31.md)
 - [401 Reading 32 - Component Composition](4read32.md)
 - [401 Reading 33 - Component Composition](4read33.md)
 - [401 Reading 34 - Component Composition](4read34.md)
 - [401 Reading 30 - Hash Tables](4read30.md)
 - [401 Reading 36 - Cookies and Such](4read36.md)
+- [401 Reading 37 - Cookies and Such](4read36.md)
+- [401 Reading 38 - Cookies and Such](4read36.md)
+- [401 Reading 39 - Cookies and Such](4read36.md)
+- [401 Reading 41 - Cookies and Such](4read36.md)
 
 
 
