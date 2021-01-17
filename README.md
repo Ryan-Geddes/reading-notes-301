@@ -29,9 +29,9 @@
 - [401 Reading 33 - Context API](4read33.md)
 - [401 Reading 34 - Context API Login & Auth](4read34.md)
 - [401 Reading 36 - Cookies and Such](4read36.md)
-- [401 Reading 37 - Redux - Combined Reducers](4read37.md)
-- [401 Reading 38 - Cookies and Such](4read38.md)
-- [401 Reading 39 - Cookies and Such](4read39.md)
+- [401 Reading 37 - Redux - Reducers](4read37.md)
+- [401 Reading 38 -  Redux - Combined Reducers](4read38.md)
+- [401 Reading 39 -  Redux - Asynchronous Actions](4read39.md)
 - [401 Reading 41 - Cookies and Such](4read41.md)
 
 

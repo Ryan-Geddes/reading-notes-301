@@ -1,4 +1,4 @@
-# Context API
+#  Redux - Asynchronous Actions
 
 In your reading notes page for this class, provide answers to the following prompts. Cite any external sources
 
