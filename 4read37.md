@@ -1,65 +1,28 @@
-# Context API
+# Redux - Combined Reducers
 
 In your reading notes page for this class, provide answers to the following prompts. Cite any external sources
 
-## Describe use cases for useMemo() and useReducer()
+## Why choose Redux instead of the Context API for global state?
 
-useReducer() is preferred when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one. useMemo() will check if any dependencies have changed, if not, it will return the cached return value, not calling the function. It helps optimize performance.
+Context triggers a re-render every single time a state variable changes.  Redux only updates a slice of the state, just the part that changes.  Redux is better for applications with frequent updates and more complex states. Also changes to states are centralized and happen one by one in a strict order so there are no subtle race conditions to watch out for.
 
-## Why do custom hooks need the use prefix?
+## What is the purpose of a reducer?
+It will update the state depending on which action gets dispatched
 
-It's a react semantic naming convention.  I believe react treats useFunctions differently as well.
+## What does an action contain?
+A type and a payload
 
-## What do custom hooks usually do?
-You ususally write a custom hook to replace a app specific function that is being reused.
-
-Custom Hooks are a mechanism to reuse stateful logic (such as setting up a subscription and remembering the current value), but every time you use a custom Hook, all state and effects inside of it are fully isolated.
-
-## Using any list of custom hooks, research and name one that you think will be useful in your applications
-
-## Describe how a hook that fetches API data might work
-You can use useEffect() with async/await workarounds to fetch API data. The following are three known ways to make an API call utilizing useEffect():
-
-Async method 1 is REACT recommended
-
-```
-useEffect(() => {
-const search = async () => {
-const { data } = await axios.get('https://en.wikipedia.org/w/api.php', {
-  params: {
-    action: 'query',
-    list: 'search',
-    origin: '*',
-    format: 'json',
-    srsearch: term
-  }
-});
-setResults(data.query.search);
-}
-if (term) {
-search();
-}
-}, [term]);
-```
-
-```
-(async () => {
-await
-axios.get('stuff');
-})();
-```
-
-```
-axios.get('stuff')
-.then((data) => {console.log(response.data)})
-```
-
+## Why do we need to copy the state in a reducer?
+Reducers are pure functions that take the previous state and action and return the next state. Reducers are never allowed to mutate the original/current state values. It must make “immutable updates” by copying the existing state and making changes to the copied values.
 # Vocabulary Terms
 
-- **reducer** [reducer definition](https://reactjs.org/docs/hooks-reference.html#usereducer) An alternative to useState()
-Accepts a reducer type (state, action) => newState and returns the current state paired with a dispatch method.
-useReducer is usually preferable to useState when you have comlex state logic that involves multi-sub-values or when the next state depends on the previous one.
-also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks
+- **immutable state** unchangeable state
+- **time travel in redux** the ability to see dispatched actions and the state of the redux store at every point in time. This makes it possible to inspect the state and travel back in time to previous state without reloading the page or restarting the app. Use Redux DevTools
+- **action creator** a function that returns an action object
+- **reducer** these are functions with state and actions passed in. These work with action.type in switch cases and return the updated state it optionally needs to accept payload to work properly. Sometimes you will need to merge separate reducers before creating a store
+- **dispatch** a method in redux that will use an action object to trigger the reducer to update a state
+- **pure function** A pure function is a function which given the same input, will always return the same output and produces no side effects.  A dead giveaway that a function is impure is if it makes sense to call it without using its return value. For pure functions, that’s a noop.
+[what is a pure function](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976)
 
 
 
@@ -67,13 +30,9 @@ also lets you optimize performance for components that trigger deep updates beca
 <h3 id="links">Links:</h3>
 
 <ul>
-  <li><a href="https://www.telerik.com/blogs/everything-you-need-to-create-a-custom-react-hook">custom hooks - all you need to know</a></li>
-  <li><a href="https://dev.to/vinodchauhan7/react-hooks-with-async-await-1n9g">async hooks</a></li>
-  <li><a href="https://reactjs.org/docs/hooks-reference.html#usereducer">useReducer Hook</a></li>
-  <li><a href="https://reactjs.org/docs/hooks-custom.html">react custom hooks</a></li>
-  <li><a href="https://usehooks.com/">use hooks</a></li>
-  <li><a href="https://github.com/rehooks/awesome-react-hooks">hooks list</a></li>
-  <li><a href="https://blog.bitsrc.io/10-react-custom-hooks-you-should-have-in-your-toolbox-aa27d3f5564d">10 essential react hooks</a></li>
+  <li><a href="https://www.youtube.com/watch?v=gBER4Or86hE">Multiple Reducers Example</a></li>
+  <li><a href="https://redux.js.org/recipes/structuring-reducers/using-combinereducers/">Redux Docs: Using Combined Reducers</a></li>
+  <li><a href="https://redux.js.org/api/combinereducers/">Redux Docs: Combined Reducer Syntax</a></li>
 </ul>
 
 

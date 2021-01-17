@@ -24,15 +24,15 @@
 - [401 Reading 28 - Component Composition](4read28.md)
 - [401 Reading 29 - Routing](4read29.md)
 - [401 Reading 31 - Hooks API](4read31.md)
+- [401 Reading 30 - Hash Tables](4read30.md)
 - [401 Reading 32 - Custom Hooks](4read32.md)
 - [401 Reading 33 - Context API](4read33.md)
 - [401 Reading 34 - Context API Login & Auth](4read34.md)
-- [401 Reading 30 - Hash Tables](4read30.md)
 - [401 Reading 36 - Cookies and Such](4read36.md)
-- [401 Reading 37 - Cookies and Such](4read36.md)
-- [401 Reading 38 - Cookies and Such](4read36.md)
-- [401 Reading 39 - Cookies and Such](4read36.md)
-- [401 Reading 41 - Cookies and Such](4read36.md)
+- [401 Reading 37 - Redux - Combined Reducers](4read37.md)
+- [401 Reading 38 - Cookies and Such](4read38.md)
+- [401 Reading 39 - Cookies and Such](4read39.md)
+- [401 Reading 41 - Cookies and Such](4read41.md)
 
 
 
