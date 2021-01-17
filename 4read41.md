@@ -1,80 +1,33 @@
-# Context API
+# React Native
 
 In your reading notes page for this class, provide answers to the following prompts. Cite any external sources
 
-## Describe use cases for useMemo() and useReducer()
+## Compare and Contrast Redux Toolkit with Redux “Ducks”
 
-useReducer() is preferred when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one. useMemo() will check if any dependencies have changed, if not, it will return the cached return value, not calling the function. It helps optimize performance.
+Redux Toolkit provides some tools that abstract over the setup process and handle the most common use cases, as well as include some useful utilities that will let the user simplify their application code.
 
-## Why do custom hooks need the use prefix?
+Ducks is a modular pattern that collocates actions, action types and reducers.
 
-It's a react semantic naming convention.  I believe react treats useFunctions differently as well.
+## What is the principle advantage of Redux Toolkit
+Toolkit minimizes boiler plate from standard redux library. Configuration is less complicated and avoids need for additional libraries. Includes default middleware and thunk for async actions.  Redux Toolkit simplifies (Links to an external site.) common Redux use cases, sometimes allowing developers to drastically reduce the amount of handwritten code necessary to create their project.
 
-## What do custom hooks usually do?
-You ususally write a custom hook to replace a app specific function that is being reused.
-
-Custom Hooks are a mechanism to reuse stateful logic (such as setting up a subscription and remembering the current value), but every time you use a custom Hook, all state and effects inside of it are fully isolated.
-
-## Using any list of custom hooks, research and name one that you think will be useful in your applications
-
-## Describe how a hook that fetches API data might work
-You can use useEffect() with async/await workarounds to fetch API data. The following are three known ways to make an API call utilizing useEffect():
-
-Async method 1 is REACT recommended
-
-```
-useEffect(() => {
-const search = async () => {
-const { data } = await axios.get('https://en.wikipedia.org/w/api.php', {
-  params: {
-    action: 'query',
-    list: 'search',
-    origin: '*',
-    format: 'json',
-    srsearch: term
-  }
-});
-setResults(data.query.search);
-}
-if (term) {
-search();
-}
-}, [term]);
-```
-
-```
-(async () => {
-await
-axios.get('stuff');
-})();
-```
-
-```
-axios.get('stuff')
-.then((data) => {console.log(response.data)})
-```
 
 # Vocabulary Terms
 
-- **reducer** [reducer definition](https://reactjs.org/docs/hooks-reference.html#usereducer) An alternative to useState()
-Accepts a reducer type (state, action) => newState and returns the current state paired with a dispatch method.
-useReducer is usually preferable to useState when you have comlex state logic that involves multi-sub-values or when the next state depends on the previous one.
-also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks
+- **redux toolkit slices** Reducers (Links to an external site.) that are passed to combineReducers.  createSlice(): accepts an object of reducer functions, a slice name, and an initial state value, and automatically generates a slice.
+- **namespace**  A container (Links to an external site.) created to hold a logical grouping of unique identifiers.
 
 
 
 # Preparation Materials
-<h3 id="links">Links:</h3>
+### **Links:**
 
-<ul>
-  <li><a href="https://www.telerik.com/blogs/everything-you-need-to-create-a-custom-react-hook">custom hooks - all you need to know</a></li>
-  <li><a href="https://dev.to/vinodchauhan7/react-hooks-with-async-await-1n9g">async hooks</a></li>
-  <li><a href="https://reactjs.org/docs/hooks-reference.html#usereducer">useReducer Hook</a></li>
-  <li><a href="https://reactjs.org/docs/hooks-custom.html">react custom hooks</a></li>
-  <li><a href="https://usehooks.com/">use hooks</a></li>
-  <li><a href="https://github.com/rehooks/awesome-react-hooks">hooks list</a></li>
-  <li><a href="https://blog.bitsrc.io/10-react-custom-hooks-you-should-have-in-your-toolbox-aa27d3f5564d">10 essential react hooks</a></li>
-</ul>
+- [getting started with react native](https://facebook.github.io/react-native/docs/getting-started)
+- [react native basics (Tutorial)](https://dev.to/vinodchauhan7/react-hooks-with-async-await-1n9g)
+- [React Native](https://facebook.github.io/react-native/)
+- [Expo](https://expo.io/)
+- [Expo snack](https://snack.expo.io/)
+- [Ejecting](https://docs.expo.io/versions/latest/expokit/eject)
 
 
 
