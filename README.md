@@ -23,7 +23,7 @@
 - [401 Reading 27 - Props and State](4read27.md)
 - [401 Reading 28 - Component Composition](4read28.md)
 - [401 Reading 29 - Routing](4read29.md)
-- [401 Reading 31 - Component Composition](4read31.md)
+- [401 Reading 31 - Hooks API](4read31.md)
 - [401 Reading 32 - Component Composition](4read32.md)
 - [401 Reading 33 - Component Composition](4read33.md)
 - [401 Reading 34 - Component Composition](4read34.md)
