@@ -26,6 +26,4 @@ How to insert cursor at beginning of every line:
 
 Press CTRL + A to select all of the text.
 Press SHIFT + ALT + I to insert multiple cursors at the end of each line.
-Press Home twice to jump to the start of every line.
-
-
+Press Home twice to jump to the start of every line!
