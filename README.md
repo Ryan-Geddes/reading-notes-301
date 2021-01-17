@@ -26,7 +26,7 @@
 - [401 Reading 31 - Hooks API](4read31.md)
 - [401 Reading 32 - Custom Hooks](4read32.md)
 - [401 Reading 33 - Context API](4read33.md)
-- [401 Reading 34 - ](4read34.md)
+- [401 Reading 34 - Context API Login & Auth](4read34.md)
 - [401 Reading 30 - Hash Tables](4read30.md)
 - [401 Reading 36 - Cookies and Such](4read36.md)
 - [401 Reading 37 - Cookies and Such](4read36.md)
